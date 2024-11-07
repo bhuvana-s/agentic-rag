@@ -1,0 +1,13 @@
+# Install the following packages
+pandas
+matplotlib
+numpy
+scipy
+llama-index
+langchain
+scikit-learn
+llama-index-embeddings-ollama
+langgraph
+llama-index-vector-stores-faiss
+faiss-cpu
+langchain-community
