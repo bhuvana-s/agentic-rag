@@ -1,6 +1,6 @@
 # Agentic RAG
 
-> This is a self-correcting RAG pattern that checks the retrieved contexts for relevancy and the generated answers for hallucinations.\ It is loosely based on this Self-RAG [paper](https://arxiv.org/abs/2310.11511)\
+> This is a self-correcting RAG pattern that checks the retrieved contexts for relevancy and the generated answers for hallucinations.\ It is loosely based on this Self-RAG [paper](https://arxiv.org/abs/2310.11511)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -14,8 +14,8 @@
 
 ## Introduction
 
-This project is a self-correcting RAG pattern that checks the retrieved contexts for relevancy and the generated answers for hallucinations.\ 
-It is loosely based on this Self-RAG [paper](https://arxiv.org/abs/2310.11511)\
+This project is a self-correcting RAG pattern that checks the retrieved contexts for relevancy and the generated answers for hallucinations.
+It is loosely based on this Self-RAG [paper](https://arxiv.org/abs/2310.11511)
 
 ## Features
 
@@ -27,9 +27,9 @@ The toxic_rail_experiment.ipynb notebook is an experimental implementation of gu
 
 ## SneakPeek
 
-<img title="flow"  src="resource/flow.png">\
-- The LLM used in this is llama3:8b. The embedding model used is mxbai-embed-large (1024 dimensions). Both are ran locally using ollama
-- The chunking is done using SemanticSplitter which helps to split meaningfully complete blocks\
+<img title="flow"  src="resource/flow.png">
+- The LLM used in this is llama3:8b. The embedding model used is mxbai-embed-large (512 dimensions). Both are ran locally using ollama
+- The chunking is done using SemanticSplitter which helps to split meaningfully complete blocks
 - FAISS (Facebook AI Similarity Search) is a popular library for efficient similarity search and clustering of dense vectors. Used IndexFlatL2 for Simple exact search and LlamaIndex to provide a higher-level interface to FAISS
 - Used langgraph to compose the workflow. It brings loose coupling and the ability to assemble functionality as in the diagram
 
@@ -117,9 +117,9 @@ Now all set and go to ipynb and execute
 ## Usage
 Run the notebooks in the order:
 1. toxic_rail_experiment.ipynb
-    step through toxic_rail_experiment.ipynb where randomforest classifier model will be created. The dataset used for this experiment was taken from this [kaggle dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) \
+    step through toxic_rail_experiment.ipynb where randomforest classifier model will be created. The dataset used for this experiment was taken from this [kaggle dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) 
 2. agentic_rag_index.ipynb
-    Step through the the agentic_rag_index notebook to create the vectorstore and index.\
+    Step through the the agentic_rag_index notebook to create the vectorstore and index.
 3. agentic_rag_generate.ipynb
     Step through the agentic_rag_generate notebook to run the workflow that the runs the steps as in the graph above.
 
